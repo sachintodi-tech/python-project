@@ -1,0 +1,173 @@
+1---Ask the user for the price of 3 items and calculate the total bill.
+
+item1 = float(input("Enter price of item 1: "))
+item2 = float(input("Enter price of item 2: "))
+item3 = float(input("Enter price of item 3: "))
+
+total = item1 + item2 + item3
+
+print("Total Bill =", total)
+
+
+2----Ask the user for the price and quantity of an item and calculate the total cost.
+
+
+
+price = float(input("Enter price: "))
+quantity = int(input("Enter quantity: "))
+
+total = price * quantity
+
+print("Total Cost =", total)
+
+
+
+
+
+
+3-----Ask for the total bill. If the bill is ₹1000 or more, give a 10% discount. Otherwise, no discount.
+
+
+
+bill = float(input("Enter total bill: "))
+
+if bill >= 1000:
+    discount = bill * 0.10
+    final_bill = bill - discount
+else:
+    final_bill = bill
+
+print("Final Bill =", final_bill)
+
+
+
+
+
+
+4----Take the user's age as input. Check whether the person is eligible to vote.
+
+
+
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You can vote.")
+else:
+    print("You cannot vote.")
+
+
+
+5-----Take a number from the user and check whether it is positive or negative.
+
+
+
+num = int(input("Enter a number: "))
+
+if num >= 0:
+    print("Positive")
+else:
+    print("Negative")
+
+
+
+
+6----Ask the user for their marks. If marks are 40 or above, print "Pass", otherwise print "Fail".
+
+
+
+
+marks = float(input("Enter your marks: "))
+
+if marks >= 40:
+    print("Pass")
+else:
+    print("Fail")
+
+
+
+
+7-----Ask for a person's salary. If salary is greater than ₹50,000, calculate a 10% tax. Otherwise, calculate a 5% tax.
+
+
+salary = float(input("Enter your salary: "))
+
+if salary > 50000:
+    tax = salary * 0.10
+else:
+    tax = salary * 0.05
+
+print("Tax =", tax)
+
+
+
+
+8-----Take marks from the user and print the grade:
+
+90–100 → A
+80–89 → B
+70–79 → C
+60–69 → D
+Below 60 → F
+
+
+
+
+
+
+marks = int(input("Enter your marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 80:
+    print("Grade B")
+elif marks >= 70:
+    print("Grade C")
+elif marks >= 60:
+    print("Grade D")
+else:
+    print("Grade F")
+
+
+
+
+
+9-----Create a simple calculator. Take two numbers and an operator (+, -, *, /) from the user.
+
+
+if operator == "+":
+    print(num1 + num2)
+elif operator == "-":
+    print(num1 - num2)
+elif operator == "*":
+    print(num1 * num2)
+elif operator == "/":
+    print(num1 / num2)
+else:
+    print("Invalid operator")
+
+
+
+10------Ask the user for their age and print:
+
+0–12 → Child
+13–19 → Teenager
+20–59 → Adult
+60+ → Senior Citizen
+
+
+
+
+
+
+age = int(input("Enter your age: "))
+
+if age <= 12:
+    print("Child")
+elif age <= 19:
+    print("Teenager")
+elif age <= 59:
+    print("Adult")
+else:
+    print("Senior Citizen")
+
