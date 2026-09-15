@@ -1,0 +1,106 @@
+1. Create a list and print all elements
+
+fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"]
+
+print(fruits)
+
+
+2. Access an element from the list
+
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[2])
+
+
+3. Add an element into the list
+
+
+colors = ["Red", "Blue", "Green", "Yellow"]
+
+colors.append("Black")
+
+print(colors)
+
+
+
+
+4. Insert an element at a specific position
+
+
+
+
+languages = ["Java", "C++", "JavaScript"]
+
+languages.insert(1, "Python")
+
+print(languages)
+
+
+
+5. Remove an element from a list
+
+
+
+fruits = ["Apple", "Banana", "Mango", "Orange"]
+
+fruits.remove("Banana")
+
+print(fruits)
+
+
+
+6. Find the length of a list
+
+
+
+
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(len(numbers))
+
+
+
+
+7. Find the largest and smallest number
+
+
+
+numbers = [45, 12, 89, 34, 67, 23]
+
+print( max(numbers))
+print( min(numbers))
+
+
+
+
+8.  Sort the following numbers in ascending  order
+
+
+
+numbers = [45, 12, 78, 23, 9, 56]
+
+numbers.sort()
+
+print(numbers)
+
+
+
+
+
+9.  Sort the following numbers in  descending order
+
+
+
+numbers = [45, 12, 78, 23, 9, 56]
+
+numbers.sort(reverse=True)
+
+print(numbers)
+
+
+
+
+
+
+
