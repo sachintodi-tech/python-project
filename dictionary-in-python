@@ -1,0 +1,178 @@
+1---Create a dictionary of a student.
+
+
+student = {"name": "Rahul", "age": 20, "course": "Python"}
+
+print(student)
+
+
+2 ---Print the name of the student.
+
+
+student = {"name": "Rahul", "age": 20, "course": "Python"}
+
+print(student["name"])
+
+
+
+3---Add a new item to a dictionary.
+
+
+student = {"name": "Rahul", "age": 20}
+
+student["city"] = "Jaipur"
+
+print(student)
+
+
+
+4---Change the age of a student.
+
+
+student = {"name": "Rahul", "age": 20 }
+
+student["age"] = 21
+
+print(student) 
+
+  
+
+
+5---Remove an item from a dictionary.
+
+
+
+student = {"name": "Rahul", "age": 20, "city": "Jaipur" }
+
+del student["city"]
+
+print(student) 
+
+
+
+
+6---Print all the keys of a dictionary.  
+
+
+
+student = { "name": "Rahul", "age": 20, "city": "Jaipur" }
+
+print(student.keys())
+
+
+
+
+7----Print all the values of a dictionary.
+
+student = { "name": "Rahul", "age": 20, "city": "Jaipur" }
+
+print(student.values())
+
+
+
+8--- Print all keys and values of a dictionary.
+
+
+student = { "name": "Rahul", "age": 20, "city": "Jaipur" }
+
+print(student.items())
+
+
+
+
+9---Check whether a key exists in a dictionary.
+
+
+
+student = {"name": "Rahul", "age": 20}
+
+if "name" in student:
+    print("name exists")
+else:
+    print("name does not exist")
+
+
+
+
+10---Find the length of a dictionary.
+
+
+
+student = {"name": "Rahul", "age": 20, "city": "Jaipur"}
+
+print(len(student))
+
+
+
+  
+  
+11---Remove all items from a dictionary.
+
+
+
+student = {"name": "Rahul", "age": 20 }
+
+student.clear()
+
+print(student) 
+
+
+
+
+
+
+12---Create a dictionary of three subjects and their marks.  
+
+
+
+
+marks = { "English": 85, "Maths": 90, "Python": 95 }
+
+print(marks)  
+  
+
+
+
+
+13---Find the total marks from a dictionary.
+
+
+
+
+marks = {"English": 85, "Maths": 90, "Python": 95 }
+
+total = sum(marks.values())
+
+print("Total Marks:", total)  
+
+
+
+
+  
+14---Copy a dictionary.
+
+
+
+
+student = {"name": "Rahul", "age": 20 }
+
+new_student = student.copy()
+
+print(new_student)  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
