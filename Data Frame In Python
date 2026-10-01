@@ -1,0 +1,346 @@
+import pandas as pd
+
+data = {
+    "Student_ID": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110],
+    "Name": [
+        "Rahul", "Priya", "Aman", "Sneha", "Vikas",
+        "Anjali", "Rohit", "Neha", "Karan", "Pooja"
+    ],
+    "Age": [18, 19, 18, 20, 19, 18, 21, 19, 20, 18],
+    "Gender": [
+        "Male", "Female", "Male", "Female", "Male",
+        "Female", "Male", "Female", "Male", "Female"
+    ],
+    "Math": [85, 92, 76, 88, 65, 95, 72, 89, 78, 91],
+    "Science": [80, 89, 74, 90, 68, 94, 70, 85, 82, 93],
+    "English": [78, 95, 80, 86, 72, 91, 75, 88, 79, 90],
+    "Attendance": [90, 95, 82, 88, 75, 98, 80, 92, 85, 96]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+
+
+
+1---Display the first 5 students.
+
+
+
+print(df.head())
+
+
+
+2---Display the last 5 students.
+
+
+
+print(df.tail())
+
+
+
+3---Find the number of rows and columns.
+
+print(df.shape)
+
+
+
+
+4---Display all column names.
+
+print(df.columns)  
+
+
+
+5---Get basic information about the DataFrame.
+
+print(df.info())
+
+
+
+6---Find the highest Science marks.
+
+print(df["Science"].max())
+
+
+
+
+7---Find students whose Math marks are greater than 80.
+
+
+
+result = df[df["Math"] > 80]
+
+print(result)
+
+
+
+
+8---Create one calculated columns.
+
+
+df["Total"] = df["Math"] + df["Science"] + df["English"]
+
+print(df)
+
+
+
+9---Average Marks for the subjects.
+
+  
+df["Average"] = df["Total"] / 3
+
+print(df)  
+  
+  
+
+
+10---Find students who scored more than 80 in Math AND more than 80 in Science.
+
+
+result = df[(df["Math"] > 80) & (df["Science"] > 80)]
+
+print(result)
+
+
+
+
+11---Find students whose Math marks are greater than 80 AND attendance is greater than 90.
+
+  
+result = df[(df["Math"] > 80) & (df["Attendance"] > 90)]
+
+print(result)
+
+
+
+
+12---Find students who scored at least 80 in all three subjects.
+
+  
+result = df[(df["Math"] >= 80) & (df["Science"] >= 80) & (df["English"] >= 80)]
+
+print(result)
+
+
+
+
+13---Find students who scored more than 90 in Math OR Science.
+
+  
+result = df[(df["Math"] > 90) | (df["Science"] > 90)]
+
+print(result)  
+
+
+
+
+14---Find students whose attendance is below 80 OR Math marks are below 70.
+
+  
+result = df[(df["Attendance"] < 80) | (df["Math"] < 70)]
+
+print(result)
+
+
+
+
+15---Find students who have Math marks greater than 80 AND either Science or English marks greater than 90.
+  
+result = df[(df["Math"] > 80) & ((df["Science"] > 90) | (df["English"] > 90))]
+
+print(result)
+
+
+
+
+16---Display only the first 5 rows of the DataFrame.
+
+
+result = df.iloc[:5]
+
+print(result)  
+
+
+
+17---Display rows from index 2 to 6.
+
+
+result = df.iloc[2:7]
+
+print(result)  
+
+
+
+
+18---Display the first 5 students' Name, Math, and Science marks.
+
+
+result = df.loc[:4, ["Name", "Math", "Science"]]
+
+print(result)  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
