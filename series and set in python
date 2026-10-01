@@ -1,0 +1,241 @@
+1---Create a Pandas Series containing five numbers.
+
+import pandas as pd
+
+s = pd.Series([10, 20, 30, 40, 50])
+
+print(s)
+
+
+
+
+2---Create a Series with custom indexes.
+
+import pandas as pd
+
+s = pd.Series([85, 90, 78], index=["Rahul", "Aman", "Priya"])
+
+print(s)
+
+
+
+3---Find the maximum and minimum marks.
+
+import pandas as pd
+
+marks = pd.Series([85, 90, 78, 95, 88])
+
+print( marks.max())
+print( marks.min())
+
+
+
+
+
+
+4---Find the average of a Series.
+
+import pandas as pd
+
+marks = pd.Series([80, 70, 90, 60, 100])
+
+print("Average", marks.mean())
+
+
+
+
+5---Select values greater than 80.
+
+import pandas as pd
+
+marks = pd.Series([65, 85, 90, 72, 95])
+
+result = marks[marks > 80]
+
+print(result)
+
+
+
+
+6---Check for missing values.
+
+import pandas as pd
+
+s = pd.Series([10, 20, None, 40, None])
+
+print(s.isnull())
+
+
+
+
+
+7---Replace missing values with 0.
+
+
+import pandas as pd
+
+s = pd.Series([10, 20, None, 40, None])
+
+s = s.fillna(0)
+
+print(s)
+
+
+
+
+8---Count unique values in a Series.
+
+
+import pandas as pd
+
+s = pd.Series(["Apple", "Mango", "Apple", "Banana", "Mango"])
+
+print(s.value_counts())
+
+
+
+
+
+9---Convert strings to uppercase.
+
+import pandas as pd
+
+s = pd.Series(["python", "numpy", "pandas"])
+
+print(s.str.upper())
+
+
+
+
+10---Create a Series from a dictionary.
+
+import pandas as pd
+
+data = {"Python": 90, "NumPy": 85, Pandas": 95 }
+
+s = pd.Series(data)
+
+print(s)
+
+
+
+
+11---Create a set of five numbers.
+
+
+numbers = {10, 20, 30, 40, 50}
+
+print(numbers)
+
+
+
+
+12---Remove duplicate values from a list using a set.
+
+
+
+numbers = [10, 20, 10, 30, 20, 40, 30]
+
+unique_numbers = set(numbers)
+
+print(unique_numbers)
+
+
+
+
+
+13---Find the union of two sets.
+
+
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A.union(B))
+
+
+
+
+14---Find the common elements between two sets.
+
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A.intersection(B))
+
+
+
+
+15---Find elements present in A but not in B.
+
+
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A.difference(B))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
